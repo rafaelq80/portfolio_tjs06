@@ -97,6 +97,14 @@ a {
     margin-left: 1rem;
 }
 
+#menu_content_sucess {
+    max-width: 1120px;
+    padding: 0 24px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 /* Estilização da Seção Home */
 
 .home_container{
@@ -140,10 +148,35 @@ h4{
     width: 75%;
 }
 
-/* ESTILIZAÇÃO DA SEÇÃO SOBRE */
+/* Estilização da Seção Sucess */
+
+.home_container_sucess{
+    max-width: 1120px;
+    margin: 16px auto;
+    padding: 0 1rem;
+    height: calc(100vh - 200px);
+}
+
+#home_sucess{
+    width: 50vw;
+    flex-direction: column;
+}
+
+#home_sucess h1{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#home_sucess h4{
+    font-size: 1.25rem;
+    padding: 1rem;
+}
+
+/* Estilização da Seção Sobre */
+
 .sobre_container {
     max-width: 1120px;
-    margin: -24px auto;
+    margin: -1.25rem auto;
     padding: 0 1rem;
     height: 100vh;
 }
@@ -174,7 +207,8 @@ h4{
     margin-left: 2rem;
 }
 
-/* ESTILIZAÇÃO DA SEÇÃO RODAPÉ */
+/* Estilização da Seção Footer */
+
 footer {
     margin: 0;
     padding: 32px;
