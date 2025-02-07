@@ -2,21 +2,33 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
+
+     <!-- Fontes do Google -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
+     <!-- Fonte do Google - Poppins -->
+     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projeto Portfólio">
     <meta name="author" content="Rafael Queiróz">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="icon" href="./assets/img/favicon.svg" />
+    
+    <!--  Link para a Folha de Estilos CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    
     <title>Portfólio do Rafael</title>
 </head>
 
 <body>
 
     <!-- Cabeçalho da Página -->
-    <header>
+    <header class="flex menu_container">
 
-        <div id="header_content">
+        <div id="header_content" class="menu_content">
 
             <!-- Título do Cabeçalho -->
             <div id="titulo">
@@ -24,10 +36,10 @@
             </div>
 
             <!-- Menu -->
-            <div id="menu">
+            <div id="menu" class="flex">
                 <nav>
                     <!-- Marcadores não Ordenados para criar as opções do menu -->
-                    <ul>
+                    <ul class="flex menu_list">
                         <li><a href="#">Home</a></li>
                         <li><a href="#about">Sobre</a></li>
                         <li><a href="#contact">Contato</a></li>
@@ -42,31 +54,35 @@
     <main>
 
         <!-- Seção home -->
-        <section id="home">
+        <section id="home" class="flex home_container">
 
             <!-- Texto da Seção Home -->
-            <article id="home_texto">
+            <article id="home_texto" class="flex home_content">
 
                 <h4>Bem-vindo ao Novo Universo</h4>
                 <h1>Mundos diferentes para pessoas diferentes</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ipsum eum sapiente maiores adipisci
                     aperiam sint dignissimos molestias voluptas expedita doloribus consequatur saepe maxime, tempore
                     modi eligendi, eius, eos itaque.</p>
-                <a href="https://github.com/rafaelq80" target="_blank">
+                <a 
+                    href="https://github.com/rafaelq80" 
+                    target="_blank"
+                    class="botao"
+                >
                     Explorar
                 </a>
 
             </article>
 
             <!-- Imagem da Seção Home -->
-            <article id="home_imagem">
+            <article id="home_imagem" class="flex home_content">
                 <img src="./assets/img/astronauta.svg" alt="Capacete de Astronauta Animado">
             </article>
 
         </section>
 
         <!-- Seção sobre -->
-        <section id="about">
+        <section id="about" class="flex sobre_container">
 
             <!-- Imagem da Seção Sobre -->
             <img 
@@ -76,14 +92,15 @@
 
             <!-- Texto da Seção Sobre -->
             <article id="about_texto">
-                <h1>Sobre mim</h1>
+                <h2>Sobre mim</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil magni doloremque sint, qui facere fugit sequi optio molestiae sunt! Maiores sapiente atque nulla mollitia earum delectus nostrum natus architecto?</p>
 
                 <!-- Detalhes do Github -->
-                <div id="about_github">
+                <div id="about_github" class="flex sobre_github">
                     <a 
                         href="https://github.com/rafaelq80" 
                         target="_blank"
+                        class="botao"
                     >
                         Github
                     </a>
