@@ -3,23 +3,23 @@
 
 <head>
 
-     <!-- Fontes do Google -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- 
-     <!-- Fonte do Google - Poppins -->
-     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    
-     <meta charset="UTF-8">
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonte do Google - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projeto Portfólio">
     <meta name="author" content="Rafael Queiróz">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="icon" href="./assets/img/favicon.svg" />
-    
+
     <!--  Link para a Folha de Estilos CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css">
-    
+
     <title>Portfólio do Rafael</title>
 </head>
 
@@ -64,11 +64,7 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ipsum eum sapiente maiores adipisci
                     aperiam sint dignissimos molestias voluptas expedita doloribus consequatur saepe maxime, tempore
                     modi eligendi, eius, eos itaque.</p>
-                <a 
-                    href="https://github.com/rafaelq80" 
-                    target="_blank"
-                    class="botao"
-                >
+                <a href="https://github.com/rafaelq80" target="_blank" class="botao">
                     Explorar
                 </a>
 
@@ -85,23 +81,18 @@
         <section id="about" class="flex sobre_container">
 
             <!-- Imagem da Seção Sobre -->
-            <img 
-                src="./assets/img/user_01.svg" 
-                alt="Foto do Perfil do Github"
-            >
+            <img src="./assets/img/user_01.svg" alt="Foto do Perfil do Github">
 
             <!-- Texto da Seção Sobre -->
             <article id="about_texto">
                 <h2>Sobre mim</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil magni doloremque sint, qui facere fugit sequi optio molestiae sunt! Maiores sapiente atque nulla mollitia earum delectus nostrum natus architecto?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil magni doloremque sint, qui facere
+                    fugit sequi optio molestiae sunt! Maiores sapiente atque nulla mollitia earum delectus nostrum natus
+                    architecto?</p>
 
                 <!-- Detalhes do Github -->
                 <div id="about_github" class="flex sobre_github">
-                    <a 
-                        href="https://github.com/rafaelq80" 
-                        target="_blank"
-                        class="botao"
-                    >
+                    <a href="https://github.com/rafaelq80" target="_blank" class="botao">
                         Github
                     </a>
                     <p>200 Seguidores</p>
@@ -114,67 +105,43 @@
         <!-- Seção de Contato -->
         <section id="contact">
 
-            <h4>Contate-me</h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quae voluptas error omnis, deleniti molestiae dolores earum incidunt sint minus magni sunt maiores minima, cumque quam numquam officia obcaecati perspiciatis.</p>
+            <article class="contato_content">
+                <h4>Contate-me</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quae voluptas error omnis,
+                    deleniti molestiae dolores earum incidunt sint minus magni sunt maiores minima, cumque quam numquam
+                    officia obcaecati perspiciatis.</p>
 
-            <!-- Redes Sociais -->
-            <div id="icones_redes_sociais">
-                <a href="" target="_blank">
-                    <img 
-                        src="./assets/img/linkedin.svg"
-                        alt="Logo do LinkedIn"
-                    >
-                </a>
-                <a href="" target="_blank">
-                    <img 
-                        src="./assets/img/github.svg"
-                        alt="Logo do Github"
-                    >
-                </a>
-                <a href="" target="_blank">
-                    <img 
-                        src="./assets/img/instagram.svg"
-                        alt="Logo do Instagram"
-                    >
-                </a>
-            </div>
+                <!-- Redes Sociais -->
+                <div id="icones_redes_sociais">
+                    <a href="" target="_blank">
+                        <img src="./assets/img/linkedin.svg" alt="Logo do LinkedIn">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="./assets/img/github.svg" alt="Logo do Github">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="./assets/img/instagram.svg" alt="Logo do Instagram">
+                    </a>
+                </div>
+            </article>
 
             <!-- Formulário de Contato -->
             <form action="" method="POST">
 
                 <label for="nome">Nome</label>
-                <input 
-                    id="nome" 
-                    type="text" 
-                    name="nome" 
-                    placeholder="Digite o seu nome"
-                >
+                <input id="nome" type="text" name="nome" placeholder="Digite o seu nome">
                 <span id="txtNome"></span>
 
                 <label for="email">E-mail</label>
-                <input 
-                    id="email" 
-                    type="text" 
-                    name="email" 
-                    placeholder="Digite o endereço do seu e-mail"
-                >
+                <input id="email" type="text" name="email" placeholder="Digite o endereço do seu e-mail">
                 <span id="txtEmail"></span>
 
                 <label for="assunto">Assunto</label>
-                <input 
-                    id="assunto" 
-                    type="text" 
-                    name="assunto" 
-                    placeholder="Digite o assunto da mensagem"
-                >
+                <input id="assunto" type="text" name="assunto" placeholder="Digite o assunto da mensagem">
                 <span id="txtAssunto"></span>
 
                 <label for="mensagem">Mensagem</label>
-                <textarea
-                    id="mensagem"
-                    name="mensagem"
-                    placeholder="Digite a sua mensagem"
-                >
+                <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem">
                 </textarea>
 
                 <button type="submit">Enviar</button>
