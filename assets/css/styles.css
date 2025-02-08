@@ -1,14 +1,25 @@
-*{
+/*  Reset Global da página HTML 
+    Este seletor afeta todos os elementos da página.
+*/
+* {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
+
+    /* Faz com que width e height incluam a borda e o padding,*/
+    box-sizing: border-box;
+
+    /* Desabilita o sublinhado dos links*/
     text-decoration: none;
+
+    /* Desabilita a borda de foco dos elementos*/
     outline: none;
+
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
 }
 
-:root{
+/* Declaração das variáveis */
+:root {
     --purple-200: #9a7bd1;
     --purple-500: #6b36c8;
     --purple-800: #441f88;
@@ -21,16 +32,25 @@
     --white: #F9F9F9;
 }
 
-html{
+/* Configurações padrões da página 
+   Este seletor afeta todos os elementos debtro da tag html.
+*/
+html {
     width: 100%;
     height: 100vh;
+
+    /* Permite que a rolagem da página aconteça de forma suave*/
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background-color: var(--gray-200);
     color: var(--black-800);
+
+    /* Exibe as fontes com um traço mais fino e suave (Chrome e Edge) */
     -webkit-font-smoothing: antialiased;
+
+    /* Exibe as fontes com um traço mais fino e suave (Firefox) */
     -moz-osx-font-smoothing: grayscale;
 }
 
@@ -39,21 +59,23 @@ a {
     cursor: pointer;
 }
 
-.botao{
-    text-align: center;
-    padding: 12px 32px;
-    background: none;
+.botao {
+    padding: 0.5rem 2rem;
     border: 1px solid var(--purple-800);
     border-radius: 10px;
+    font-size: 1rem;
     font-weight: 700;
+    text-align: center;
+    color: var(--purple-800);
+    background: none;
 }
 
-.botao:hover{
+.botao:hover {
+    color: var(--white);
     background-color: var(--purple-800);
-    color: var(--white)
 }
 
-.flex{
+.flex {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,113 +83,116 @@ a {
 
 /* Estilização - Seção Header */
 
-.menu_container{
-    height: 80px;
+.menu_container {
     position: sticky;
     top: 0;
     width: 100%;
-    background-color: var(--purple-800);
+    height: 5rem;
     border-bottom: 1px solid var(--purple-500);
+    background-color: var(--purple-800);
+
+    /* Aplica transparência */
     filter: opacity(0.9);
 }
 
-.menu_container a{
-    color: var(--white);
+.menu_container a {
     font-weight: 700;
+    color: var(--white);
 }
 
-.menu_container a:hover{
+.menu_container a:hover {
     color: var(--purple-200);
 }
 
-.menu_content{
-    max-width: 1120px;
-    padding: 0 24px;
-    width: 100%;
+.menu_content {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    max-width: 1120px;
+    padding: 0 1.5rem;
 }
 
-.menu_list{
-    list-style: none;
+.menu_list {
     text-align: center;
+    list-style: none;
 }
 
-.menu_list li{
+.menu_list li {
     margin-left: 1rem;
 }
 
 #menu_content_sucess {
-    max-width: 1120px;
-    padding: 0 24px;
     width: 100%;
-    display: flex;
-    justify-content: center;
+    max-width: 1120px;
+    padding: 0 1.5rem;
 }
 
 /* Estilização da Seção Home */
 
-.home_container{
+.home_container {
+
+    /* Calcula altura do elemento (altura do navegador - altura do menu + 20px) */
+    height: calc(100vh - 6.25rem);
+
     max-width: 1120px;
-    margin: 16px auto;
+    margin: 1rem auto;
     padding: 0 1rem;
-    height: calc(100vh - 100px);
 }
 
 .home_container p,
 h1,
-h4{
-    text-align: center;
+h4 {
     font-size: 1rem;
+    text-align: center;
 }
 
-.home_container h1{
+.home_container h1 {
     font-size: 2.25rem;
+    font-weight: 700;
     line-height: 3rem;
+}
+
+.home_container h4 {
     font-weight: 700;
 }
 
-.home_container h4{
-    font-weight: 700;
-}
-
-.home_container p{
+.home_container p {
     margin: 1rem 0;
 }
 
-.home_container .botao{
+.home_container .botao {
     width: 40%;
 }
 
-.home_content{
-    width: 50vw;
+.home_content {
     flex-direction: column;
+    width: 50vw;
 }
 
-.home_content img{
+.home_content img {
     width: 75%;
 }
 
 /* Estilização da Seção Home - Página Sucess */
 
-.home_container_sucess{
+.home_container_sucess {
+    height: calc(100vh - 12.5rem);
     max-width: 1120px;
-    margin: 16px auto;
+    margin: 1rem auto;
     padding: 0 1rem;
-    height: calc(100vh - 200px);
 }
 
-#home_sucess{
+#home_sucess {
     width: 50vw;
     flex-direction: column;
 }
 
-#home_sucess h1{
+#home_sucess h1 {
     font-size: 2rem;
     font-weight: 700;
 }
 
-#home_sucess h4{
+#home_sucess h4 {
     font-size: 1.25rem;
     padding: 1rem;
 }
@@ -183,20 +208,21 @@ h4{
 
 .sobre_container img {
     width: 30%;
+    margin: 1rem;
     border: 5px solid var(--purple-500);
     border-radius: 50%;
 }
 
 .sobre_container h2 {
     font-size: 2rem;
+    font-weight: bold;
     line-height: 3rem;
     text-align: center;
-    font-weight: bold;
 }
 
 .sobre_container p {
-    text-align: center;
     margin: 1rem 0;
+    text-align: center;
 }
 
 .sobre_github {
@@ -211,10 +237,10 @@ h4{
 
 footer {
     margin: 0;
-    padding: 32px;
+    padding: 2rem;
+    font-weight: bold;
+    text-align: center;
     color: var(--white);
     background-color: var(--purple-500);
     filter: opacity(0.9);
-    font-weight: bold;
-    text-align: center;
 }
